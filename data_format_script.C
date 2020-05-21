@@ -47,15 +47,13 @@ void data_format_script()
   TString root_file = "fittingdata.root";
   TFile *file = new TFile(root_file,"RECREATE");
 
-  TString measured = "measured.txt";
-  //TString measured = "newfield.txt";
-  //TString nominal = "geometry.txt";
-  TString nominal = "geometry_aug.txt";
-  TString dist1 = "distortion1.txt";   
-  TString dist2 = "distortion2.txt";
-  TString dist3 = "distortion3.txt";
-  TString dist4 = "lastdistortion.txt";
-  TString outputfile = "alldata.dat";
+  TString measured = "/work/clas12/jnewton/Torus_Field/measured.txt";
+  TString nominal = "/work/clas12/jnewton/Torus_Field/geometry_aug.txt";
+  TString dist1 = "/work/clas12/jnewton/Torus_Field/distortion1.txt";   
+  TString dist2 = "/work/clas12/jnewton/Torus_Field/distortion2.txt";
+  TString dist3 = "/work/clas12/jnewton/Torus_Field/distortion3.txt";
+  TString dist4 = "/work/clas12/jnewton/Torus_Field/lastdistortion.txt";
+  TString outputfile = "/work/clas12/jnewton/Torus_Field/alldata.dat";
   
  
   filldata(nominal,dist1,dist2,dist3,dist4,outputfile,measured);
